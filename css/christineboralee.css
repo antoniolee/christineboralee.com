@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ul, p,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1;
+  margin: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #f2f2f2; }
+
+@font-face {
+  font-family: Avenir;
+  src: url(/css/fonts/avenir.otf); }
+
+nav {
+  width: 100%;
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.34);
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-right: 60px; }
+
+nav p {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-left: 30px;
+  color: white;
+  max-width: 700px; }
+
+nav p:first-child {
+  margin: 0; }
+
+nav ul {
+  max-width: 700px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+nav ul li {
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-right: 30px; }
+
+nav ul li:first-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+#intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.bio {
+  padding-top: 200px;
+  max-width: 800px;
+  color: white;
+  font-family: "Avenir";
+  text-align: center; }
+  .bio h1 {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 72px; }
+  .bio h2 {
+    font-weight: 400; }
+  .bio li {
+    margin-bottom: 5px; }
+  .bio .interests {
+    display: inline-block;
+    text-align: right;
+    margin-left: 40px; }
+  .bio .capacities {
+    display: inline-block;
+    text-align: left;
+    margin-left: 40px; }
+  .bio .footnote {
+    margin-top: 40px; }
+    .bio .footnote p {
+      margin-bottom: 15px; }

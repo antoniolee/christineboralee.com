@@ -1,0 +1,182 @@
+// Christineboralee.com
+
+// Reset 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// p,
+ul, p,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// /* HTML5 display-role reset for older browsers */
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+// 	display: block;
+// }
+body {
+	line-height: 1;
+	margin: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color:#f2f2f2;
+}
+
+// ================================ Globals  =================================
+
+@font-face {
+    font-family: Avenir;
+    src: url(/css/fonts/avenir.otf);
+}
+
+// ================================ Header Nav =================================
+nav {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,.34);
+	flex-direction: row;
+	height: 60px;
+	font-size: 16px;
+	font-family: "Avenir";
+	margin-right: 60px;
+}
+
+nav p {
+	display: flex;
+	flex: 1;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 16px;
+	font-family: "Avenir";
+	margin-left: 30px;
+	color: white;
+	max-width: 700px;
+}
+
+nav p:first-child {
+	margin: 0;
+}
+
+nav ul {
+	max-width: 700px;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+
+nav ul li {
+	font-size: 16px;
+	font-family: "Avenir";
+	margin-right: 30px;
+}
+
+nav ul li:first-child {
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+// Homepage
+#intro {
+	background: linear-gradient( rgba(0, 0, 0, .25), rgba(0, 0, 0, 0) ), url("/imgs/bg-christine.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.bio {
+	padding-top: 200px;
+	max-width: 800px;
+	color: white;
+	font-family: "Avenir";
+	text-align: center;
+
+	h1 {
+		font-family: 'Cormorant Unicase', serif;
+		font-size: 72px;
+	}
+
+	h2 {
+		font-weight: 400;
+	}
+
+	li {
+		margin-bottom: 5px;
+	}
+
+	.interests {
+		display: inline-block;
+		text-align: right;
+		margin-left: 40px;
+	}
+
+	.capacities {
+		display: inline-block;
+		text-align: left;
+		margin-left: 40px;
+	}
+
+	.footnote {
+		margin-top: 40px;
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+}
