@@ -87,9 +87,6 @@ nav p {
   color: white;
   max-width: 700px; }
 
-nav p:first-child {
-  margin: 0; }
-
 nav ul {
   max-width: 700px;
   -webkit-align-items: center;
@@ -118,6 +115,9 @@ nav ul li:first-child {
   -ms-flex-pack: start;
   justify-content: flex-start; }
 
+#homepage p {
+  line-height: 24px; }
+
 #intro {
   background: linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
   background-size: cover;
@@ -128,6 +128,7 @@ nav ul li:first-child {
   margin: 0 auto; }
 
 .bio {
+  padding: 30px;
   padding-top: 200px;
   max-width: 800px;
   color: white;
@@ -152,3 +153,10 @@ nav ul li:first-child {
     margin-top: 40px; }
     .bio .footnote p {
       margin-bottom: 15px; }
+
+@media screen and (max-width: 540px) {
+  .bio {
+    padding-top: 100px; }
+    .bio .interests, .bio .capacities {
+      text-align: center;
+      margin: 0 30px; } }
