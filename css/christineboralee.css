@@ -50,16 +50,21 @@ a:visited {
 nav {
   width: 100%;
   position: absolute;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.34);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -69,15 +74,19 @@ nav {
   margin-right: 60px; }
 
 nav p {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -89,15 +98,19 @@ nav p {
 
 nav ul {
   max-width: 700px;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
@@ -108,9 +121,11 @@ nav ul li {
   margin-right: 30px; }
 
 nav ul li:first-child {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
@@ -119,10 +134,14 @@ nav ul li:first-child {
   line-height: 24px; }
 
 #intro {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(transparent)), url("/imgs/bg-christine.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
   background-size: cover;
   background-position: center, center;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 850px; }
 
 .container {
   max-width: 1400px;
