@@ -1,6 +1,6 @@
 // Christineboralee.com
-
 // Reset 
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -19,182 +19,300 @@
 // figure, figcaption, footer, header, hgroup, 
 // menu, nav, output, ruby, section, summary,
 // p,
-ul, p,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+ul,
+p,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 // /* HTML5 display-role reset for older browsers */
 // article, aside, details, figcaption, figure, 
 // footer, header, hgroup, menu, nav, section {
 // 	display: block;
 // }
 body {
-	line-height: 1;
-	margin: 0;
+    line-height: 1;
+    margin: 0;
+    background-color: black;
 }
-ol, ul {
-	list-style: none;
+
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
-	-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 a:visited {
-	color:#f2f2f2;
+    color: #f2f2f2;
 }
 
 // ================================ Globals  =================================
-
 @font-face {
     font-family: Avenir;
     src: url(/css/fonts/avenir.otf);
 }
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 // ================================ Header Nav =================================
 nav {
-	width: 100%;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(0,0,0,.34);
-	flex-direction: row;
-	height: 60px;
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-right: 60px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .34);
+    flex-direction: row;
+    height: 60px;
+    font-size: 16px;
+    font-family: "Avenir";
+    margin-right: 60px;
 }
 
 nav p {
-	display: flex;
-	flex: 1;
-	justify-content: flex-start;
-	align-items: center;
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-left: 30px;
-	color: white;
-	max-width: 700px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Avenir";
+    margin-left: 30px;
+    color: white;
+    max-width: 700px;
 }
 
 nav ul {
-	max-width: 700px;
-	align-items: center;
-	display: flex;
-	flex: 1;
-	justify-content: flex-end;
+    max-width: 700px;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 nav ul li {
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-right: 30px;
+    font-size: 16px;
+    font-family: "Avenir";
+    margin-right: 30px;
 }
 
 nav ul li:first-child {
-	display: flex;
-	justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 
 // Homepage
 #homepage {
-	p {
-		line-height: 24px;
-	}
+    p {
+        line-height: 24px;
+    }
 }
 
-
+// Intro Section
 #intro {
-	background: linear-gradient( rgba(0, 0, 0, .25), rgba(0, 0, 0, 0) ), url("/imgs/bg-christine.jpg");
-	background-size: cover;
-	background-position: center, center;
-	height: 100vh;
-	min-height: 850px;
+    background: linear-gradient( rgba(0, 0, 0, .65), rgba(0, 0, 0, .35)), url("/imgs/bg-bay.jpg");
+    background-size: cover;
+    background-position: center, center;
+    height: 100vh;
+    min-height: 700px;
+
+    .bio {
+        padding: 30px;
+        padding-top: 150px;
+        max-width: 800px;
+        color: white;
+        font-family: "Avenir";
+        text-align: center;
+
+        h1 {
+            font-family: 'Cormorant Unicase', serif;
+            font-size: 72px;
+        }
+
+        h2 {
+        	font-size: 28px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .interests {
+            display: inline-block;
+            text-align: right;
+            margin-left: 40px;
+        }
+
+        .capacities {
+            display: inline-block;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .footnote {
+            margin-top: 40px;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
-
-.container {
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
-.bio {
-	padding: 30px;
-	padding-top: 200px;
-	max-width: 800px;
-	color: white;
-	font-family: "Avenir";
-	text-align: center;
-
-	h1 {
-		font-family: 'Cormorant Unicase', serif;
-		font-size: 72px;
-	}
-
-	h2 {
-		font-weight: 400;
-	}
-
-	li {
-		margin-bottom: 5px;
-	}
-
-	.interests {
-		display: inline-block;
-		text-align: right;
-		margin-left: 40px;
-	}
-
-	.capacities {
-		display: inline-block;
-		text-align: left;
-		margin-left: 40px;
-	}
-
-	.footnote {
-		margin-top: 40px;
-
-		p {
-			margin-bottom: 15px;
-		}
-	}
-}
-
 
 @media screen and (max-width: 540px) {
-	.bio {
-		padding-top: 100px;
+    #intro {
+		height: 700px;
 
-		.interests, .capacities {
-			text-align: center;
-			margin: 0 30px;
+        .bio {
+            padding-top: 100px;
+
+            h1 {
+            	font-size: 36px;
+            }
+
+            h2 {
+            	font-size: 20px;
+            }
+
+            .interests,
+            .capacities {
+                text-align: center;
+                margin: 0 30px;
+            }
+        }
+    }
+}
+
+// Manifesto
+#manifesto {
+    background: linear-gradient( rgba(0, 0, 0, .45), rgba(0, 0, 0, .85)), url("/imgs/bg-sf.jpg");
+    background-size: cover;
+    background-position: center, center;
+    min-height: 750px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+
+    .list {
+        padding: 100px 30px 0;
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            display: inline-block;
+            font-size: 36px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white;
+        }
+
+        ol {
+            text-align: left;
+        }
+
+        li {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+	#manifesto {
+		.list {
+			padding-top: 50px;
 		}
+	}
+}
+
+
+// Contact
+
+#contact {
+	padding-top: 120px;
+	min-height: 300px;
+	background-color: black;
+	color: white;
+	font-family: 'Avenir', serif;
+
+	.left, .right {
+		display: inline-block;
+		width: 35%;
+		vertical-align: middle;
+	}
+
+	.left {
+		text-align: right;
+		padding-right: 100px;
+
+		h2 {
+			font-size: 36px;
+			margin: 0;
+		}
+	}
+
+	.right {
+		li {
+			margin-bottom: 20px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media screen and (max-width: 540px) {
+	#contact {
+		.left, .right {
+			display: block;
+			width: 100%;
+			padding: 0;
+			text-align: center;
+
+			h2 {
+				margin-bottom: 30px;
+			}
+		}	
 	}
 }

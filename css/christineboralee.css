@@ -2,8 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-ul, p,
-time, mark, audio, video {
+ul,
+p,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -13,16 +17,20 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
-  margin: 0; }
+  margin: 0;
+  background-color: black; }
 
-ol, ul {
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none; }
 
@@ -46,6 +54,10 @@ a:visited {
 @font-face {
   font-family: Avenir;
   src: url(/css/fonts/avenir.otf); }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
 
 nav {
   width: 100%;
@@ -134,49 +146,114 @@ nav ul li:first-child {
   line-height: 24px; }
 
 #intro {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(transparent)), url("/imgs/bg-christine.jpg");
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), transparent), url("/imgs/bg-christine.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.35))), url("/imgs/bg-bay.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("/imgs/bg-bay.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("/imgs/bg-bay.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("/imgs/bg-bay.jpg");
   background-size: cover;
   background-position: center, center;
   height: 100vh;
-  min-height: 850px; }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto; }
-
-.bio {
-  padding: 30px;
-  padding-top: 200px;
-  max-width: 800px;
-  color: white;
-  font-family: "Avenir";
-  text-align: center; }
-  .bio h1 {
-    font-family: 'Cormorant Unicase', serif;
-    font-size: 72px; }
-  .bio h2 {
-    font-weight: 400; }
-  .bio li {
-    margin-bottom: 5px; }
-  .bio .interests {
-    display: inline-block;
-    text-align: right;
-    margin-left: 40px; }
-  .bio .capacities {
-    display: inline-block;
-    text-align: left;
-    margin-left: 40px; }
-  .bio .footnote {
-    margin-top: 40px; }
-    .bio .footnote p {
-      margin-bottom: 15px; }
+  min-height: 700px; }
+  #intro .bio {
+    padding: 30px;
+    padding-top: 150px;
+    max-width: 800px;
+    color: white;
+    font-family: "Avenir";
+    text-align: center; }
+    #intro .bio h1 {
+      font-family: 'Cormorant Unicase', serif;
+      font-size: 72px; }
+    #intro .bio h2 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 28px; }
+    #intro .bio li {
+      margin-bottom: 10px; }
+    #intro .bio .interests {
+      display: inline-block;
+      text-align: right;
+      margin-left: 40px; }
+    #intro .bio .capacities {
+      display: inline-block;
+      text-align: left;
+      margin-left: 40px; }
+    #intro .bio .footnote {
+      margin-top: 40px; }
+      #intro .bio .footnote p {
+        margin-bottom: 15px; }
 
 @media screen and (max-width: 540px) {
-  .bio {
-    padding-top: 100px; }
-    .bio .interests, .bio .capacities {
-      text-align: center;
-      margin: 0 30px; } }
+  #intro {
+    height: 700px; }
+    #intro .bio {
+      padding-top: 100px; }
+      #intro .bio h1 {
+        font-size: 36px; }
+      #intro .bio h2 {
+        font-size: 20px; }
+      #intro .bio .interests,
+      #intro .bio .capacities {
+        text-align: center;
+        margin: 0 30px; } }
+
+#manifesto {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.85))), url("/imgs/bg-sf.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)), url("/imgs/bg-sf.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)), url("/imgs/bg-sf.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)), url("/imgs/bg-sf.jpg");
+  background-size: cover;
+  background-position: center, center;
+  min-height: 750px;
+  font-family: 'Cormorant Garamond', serif;
+  color: white; }
+  #manifesto .list {
+    padding: 100px 30px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center; }
+    #manifesto .list h2 {
+      display: inline-block;
+      font-size: 36px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid white; }
+    #manifesto .list ol {
+      text-align: left; }
+    #manifesto .list li {
+      font-size: 24px;
+      margin-bottom: 10px;
+      padding-left: 15px; }
+
+@media screen and (max-width: 540px) {
+  #manifesto .list {
+    padding-top: 50px; } }
+
+#contact {
+  padding-top: 120px;
+  min-height: 300px;
+  background-color: black;
+  color: white;
+  font-family: 'Avenir', serif; }
+  #contact .left, #contact .right {
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle; }
+  #contact .left {
+    text-align: right;
+    padding-right: 100px; }
+    #contact .left h2 {
+      font-size: 36px;
+      margin: 0; }
+  #contact .right li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px; }
+
+@media screen and (max-width: 540px) {
+  #contact .left, #contact .right {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+    #contact .left h2, #contact .right h2 {
+      margin-bottom: 30px; } }
